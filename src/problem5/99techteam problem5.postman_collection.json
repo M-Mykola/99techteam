@@ -1,0 +1,91 @@
+{
+  "info": {
+    "_postman_id": "af7cdf16-8ef7-428b-902d-6377256d50a7",
+    "name": "99techteam problem5",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "14585668",
+    "_collection_link": "https://www.postman.com/mikiwork/workspace/code-challenge-99techteam/collection/14585668-af7cdf16-8ef7-428b-902d-6377256d50a7?action=share&source=collection_link&creator=14585668"
+  },
+  "item": [
+    {
+      "name": "Create Resource",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all Resources",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/resource/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "resource", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Resource by :id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/resource/67a508593dda05e568f67d1a",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "resource", "67a508593dda05e568f67d1a"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Resource by :id",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"text\": \"Hello changed\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/resource/67a508593dda05e568f67d1a",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "resource", "67a508593dda05e568f67d1a"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Resource by :id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/resource/67a508593dda05e568f67d1a",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "resource", "67a508593dda05e568f67d1a"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
